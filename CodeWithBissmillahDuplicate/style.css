@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.menu{
+    display: none;
+    align-items: center;
+}
+.main-links {
+    display: flex;
+    gap: 15px;
+}
+
+.login-signup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #6D28D9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+#nav-btn-1 {
+    padding: 5px 5px;
+    height: 26px;
+}
+
+.nav-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-2-1 {
+    padding: 10px 10px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #6c28d99b;
+}
+
+main {
+    max-width: 1250px;
+    width: 100%;
+    padding: 10px 10px;
+    margin-inline: auto;
+}
+
+.container-1 {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.container-1-text {
+    max-width: 700px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+}
+
+.container-1-image {
+    max-width: 600px;
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #6D28D9;
+}
+
+.container-1-image img {
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
+}
+
+.container-2,
+.container-3 {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-outer-box {
+    /* width: 100%; */
+    max-width: 290px;
+    position: relative;
+    height: fit-content;
+    background-color: rgba(229, 231, 235, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card-inner-box {
+    width: max(210px, 100%);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
+.cards-inner-box img {
+    width: 100%;
+    height: fit-content;
+}
+.gradiant-color{
+    background: linear-gradient( #5528A3 30%,#200F3D);
+    background-clip: text;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+}
+.card-inner-box #course-2 {
+    width: 50%;
+}
+
+.card-inner-box .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-outer {
+    margin: 20px 0;
+    flex-grow: 1;
+}
+
+.blog-inner {
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+}
+
+.blog-inner .text-1 {
+    margin-bottom: 10px;
+}
+
+.blog-image {
+    width: 60px;
+    height: 60px;
+    border: 4px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-25px, 0px);
+}
+
+footer {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #E5E7EB;
+}
+
+footer .footer-box {
+    max-width: 1250px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .nav-1{
+        flex-direction: column;
+    }
+    .logo-menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+        display: flex;
+    }
+    .main-links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-links.visibale{
+        display: none;
+    }
+    .login-signup{
+        align-self: flex-end;
+    }
+    .container-1 {
+        flex-direction: column;
+    }
+
+    .container-1-image {
+        max-width: 700px;
+        margin-inline: auto;
+    }
+
+    .container-2,
+    .container-3 {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .card-outer-box {
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .card-outer-box {
+        max-width: 100%;
+    }
+    footer .footer-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

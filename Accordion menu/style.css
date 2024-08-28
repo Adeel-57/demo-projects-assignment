@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.accordion{
+    max-width: 500px;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+.accordion-items{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+.item-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-content{
+    display: none;
+}
+.open .item-content{
+    display: block;
+}
+.item-icon{
+    cursor: pointer;
+}
