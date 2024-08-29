@@ -14,6 +14,8 @@
 </head>
 
 <body>
+    <div id="loader">
+    </div>
     <nav>
         <div style="max-width: 1250px; margin-inline: auto;">
             <div class="nav-1">
@@ -29,7 +31,7 @@
                     </svg>
                     </div>
                 </div>
-                <div class="main-links" id="main-links">
+                <div class="main-links visibale" id="main-links">
                     <a href="">Home</a>
                     <a href="">Tutorial</a>
                     <a href="">Notes</a>
@@ -105,7 +107,7 @@
         <div class="container-1">
             <div class="container-1-text">
                 <div style="display: flex;flex-direction: column;gap: 15px;">
-                    <h1>Welcome to <span style="color: #6D28D9;">CodeWitheBismiAllah</span></h1>
+                    <h1 class="heading-1">Welcome to <span style="color: #6D28D9;">CodeWitheBismiAllah</span></h1>
                     <p>Laern <span id="element"></span></p>
                     <p>Welcome to CodeWithBismiAllah, your ultimate destination for learning and mastering
                         coding! Whether you're a beginner starting from scratch or an experienced developer
@@ -215,15 +217,14 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
-        var typed = new Typed('#element', {
-            strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true,
-            smartBackspace: true,
-        });
-    </script> -->
+    <script>
+        const loader = document.getElementById('loader')
+        window.addEventListener('load',()=>{
+            setTimeout(()=>{
+                loader.style.display = 'none'
+            },1000)
+        })
+    </script>
 </body>
 
 </html>
